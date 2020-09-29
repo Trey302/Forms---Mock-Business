@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Form </title>
     </head>
     <body>
-        <form action="form.html" method="POST">
-            <fieldset>
-            <h1>Register</h1>
+        
+    <center><form action="form.html" method="post">
+            <div class="container">
+            <fieldset style="width: 50%;">
+            <h3>Register</h3>
             
                
            <label for="name">First Name:</label>
-            <input type="text" id="name" name="user_name"><br>
+            <input type="text" id="name" name="user_name" placeholder="Ex: Trey"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="user_lastname"><br>
+            <input type="text" id="lastname" name="user_lastname" placeholder="Ex: Harrell"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="user_email"><br>
+            <input type="email" id="email" name="user_email" placeholder="Ex: Register@gmail.com"><br>
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset style="width: 50%;">
+            <h3>Confirm</h3>
             <div style="margin-bottom: 20px;"></div>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="user_password"><br>
+            <input type="password" id="password" name="user_password" placeholder="Password"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="confirm">Confirm:</label>
-            <input type="password" id="confirm" name="user_confirmpassword"><br>
+            <input type="password" id="confirm" name="user_confirmpassword" placeholder="Confirm Password"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="address">Address:</label>
-            <input type="address" id="address" name="user_address"><br>
+            <input type="address" id="address" name="user_address" placeholder="Address"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="confirmaddress">Conirm:</label>
-            <input type="address" id="confirmaddress" name="user_confirmaddress"><br>
+            <input type="address" id="confirmaddress" name="user_confirmaddress" placeholder="Confirm Address"><br>
         </fieldset>
         <br>
+        <fieldset style="width: 50%;">
+            <h3>Info</h3>
             <div style="margin-bottom: 20px;"></div>
             <label for="city">City:</label>
-            <input type="text" id="city" name="user_city"><br>
+            <input type="text" id="city" name="user_city" placeholder="Ex: Newark"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="state">State:</label>
-            <input type="text" id="state" name="user_state"><br>
+            <input type="text" id="state" name="user_state" placeholder="Ex: Delaware"><br>
             <div style="margin-bottom: 20px;"></div>
             <label for="zipcode">Zipcode:</label>
-            <input type="text" id="zipcode" name="user_zipcode"><br>
-            <button 
-        </form>
+            <input type="text" id="zipcode" name="user_zipcode" placeholder="Ex: 19711"><br>
+            <div style="margin-bottom: 10px;"></div>
+            <label>Are you 18 years old or older</label>
+            <input type="radio" id="above_18" value="above_18" name="user_age">
+            <div style="margin-bottom: 10px;"></div>
+            <label>What Bank Account Would You Like To Create?</label>
+            <select id="job" name="user_job">
+                <optgroup label="All Possible Accounts">
+                    <option value="Savings_account">Savings Account</option>
+                    <option value="Checkings_account">Checkings Account</option>
+                    <option value="Money_market_account">Money Market Account</option>
+                    <option value="Certificates_of_deposits">Certificates of Deposits</option>
+                    <option value="Brokerage_accounts">Brokerage Accounts</option>
+                    <option value="Individual_retirement_account">Individual Retirement Account</option>
+                </optgroup>
+                <label for="language">Select language:</label>
+            </select>
+            <select id="language" name="language">
+                <optgroup label="Language">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">(French)Français</option>
+                    <option value="Russian">(Russian)Pусский</option>
+                    <option value="Japanese">(Japanese) 日本語</option>
+                    <option value="Irish">(Irish) Gaeilge</option>
+                    <option value="Italian">(Italian) italiano</option>
+                    <option value="Chinese">(Chinese) 中文</option>
+                    <option value="Korean">(Korean) 한국어</option>
+                    <option value="Swedish">(Swedish) svenska</option>
+                    <option value="Filipino">(Filipino) Pilipino</option>
+                    <option value="German">(German) Deutsche</option>
+                </optgroup>
+            </select>
+
+        <footer>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        </footer>
+            <div class="container signin"></div>
+
+      <button type="submit" class="register"><a href="Confirmation.html">Register</a></button>
+            
+        </center>    </form>
+    </fieldset>
     </body>
 </html>
